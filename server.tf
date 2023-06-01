@@ -16,9 +16,9 @@ resource "aws_instance" "myawsserver" {
   key_name = "rameshwar-usw2-key1"
 
   tags = {
-    Name = "Raman-DevOps-batch-server"
+    Name = "Ram-DevOps-batch-server"
     env = "Production"
-    owner = "Raman Khanna"
+    owner = "Ram"
   }
   provisioner "local-exec" {
     command = "echo The servers IP address is ${self.public_ip} && echo ${self.public_ip} > /tmp/inv"
